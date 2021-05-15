@@ -1,0 +1,161 @@
+/* Other rules */
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  background-image: url("./assets/img/foret.jpg");
+}
+.container {
+  width: 1024px;
+  margin: auto;
+  justify-content: center;
+}
+
+.air {
+  margin: 15px;
+  /* border: 1px solid red; */
+}
+.symbol {
+  margin-left: 50px;
+  /* border: 1px solid rgb(0, 255, 187); */
+  text-shadow: 1px 2px 5px#a1a1a2;
+  font-size: 30px;
+}
+.title {
+  margin-left: 30px;
+  /* border: 1px solid rgb(0, 47, 255); */
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+  text-shadow: 1px 2px 3px#a1a1a2;
+}
+
+.search input {
+  /* border: 2px solid green; */
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  text-shadow: 1px 1px 10px#ceced0;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  margin-top: 35px;
+}
+input {
+  margin: auto;
+  display: flex;
+  font-size: 20px;
+  min-height: 40px;
+  width: auto;
+  border-radius: 15px;
+  box-shadow: 1px 2px 3px rgba(211, 211, 211, 0.735);
+  outline: none;
+  border: 1px solid rgb(215, 215, 215);
+}
+
+.container,
+.results {
+  align-items: center;
+}
+.container,
+.results,
+.results > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.emoji {
+  font-weight: 500;
+  font-size: 25px;
+  margin-top: 25px;
+  /* margin-bottom: 30px; */
+  letter-spacing: 3px;
+  /* border: 1px solid rgb(149, 0, 255); */
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  bottom: 0;
+  position: absolute;
+  font-size: 15px;
+}
+
+.footer > div {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  background-color: rgb(192, 194, 194);
+}
+.footer > div > a {
+  text-decoration: inherit;
+  cursor: pointer;
+  color: inherit;
+  font-weight: 700;
+}
+.footer img {
+  width: 15%;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: auto;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    bottom: 0;
+    position: absolute;
+  }
+}
+@media (max-width: 740px) {
+  .symbol {
+    margin-left: 50px;
+    /* border: 1px solid rgb(0, 255, 187); */
+    text-shadow: 1px 2px 5px#a1a1a2;
+    font-size: 25px;
+  }
+  .title {
+    margin-left: 30px;
+    /* border: 1px solid rgb(0, 47, 255); */
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 25px;
+    text-shadow: 1px 2px 3px#a1a1a2;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    bottom: 0;
+    position: relative;
+  }
+}
+@media (max-width: 480px) {
+  .symbol {
+    margin-left: 50px;
+    /* border: 1px solid rgb(0, 255, 187); */
+    text-shadow: 1px 2px 5px#a1a1a2;
+    font-size: 16px;
+  }
+  .title {
+    margin-left: 30px;
+    /* border: 1px solid rgb(0, 47, 255); */
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+    text-shadow: 1px 2px 3px#a1a1a2;
+  }
+  .emoji {
+    margin-top: 5px;
+    margin-bottom: 50px;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    bottom: 0;
+    position: relative;
+  }
+}
